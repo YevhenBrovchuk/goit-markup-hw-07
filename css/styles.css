@@ -41,7 +41,7 @@
 }
 .conteiner{
     margin: 0 auto;
-    max-width: 1158px;
+    /* max-width: 1158px; */
     padding: 0 15px;
     /* background-color: #b6b7b9; */
     
@@ -70,15 +70,16 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    gap: 24px;
+    gap: 72px;
+    /* gap: 24px; */
     flex-wrap: wrap;
     /* outline: 1px solid; */
 }
 
 .btn{
  border-radius: 4px;
-border: 1px solid transparent;
-
+/* border: 1px solid transparent; */
+border: transparent;
     letter-spacing: 0.04em;
     font-family: inherit;
     font-weight: 500;
@@ -130,7 +131,9 @@ border-radius: 2px;
 p{
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 500;
     color:var(--main-text-color);
+  
 }
 
 /* .list-team .subtitle{
@@ -218,9 +221,10 @@ transition: color var(--transit);
 
 /* hero */
 .hero{
-height: 600px;
-max-width: 1440px;
-padding-top: 188px;
+height: auto;
+width: 100%;
+padding-top: 112px;
+padding-bottom: 112px;
 margin-left: auto;
 margin-right: auto;
 
@@ -235,10 +239,10 @@ margin-right: auto;
 
 .hero-title{   
     color:var(--body-color); 
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    font-size: 36px;
+    line-height: 1.11;
+    max-width: 320px;
+    margin: 0 auto 72px;
 }
 
 
@@ -246,13 +250,13 @@ margin-right: auto;
 /* Button Hero */
 .hero-btn{
 min-width: 169px;
-padding-left:  31px;
-padding-right: 31px;
+padding: 16px 32px;
 min-height: 56px;
-margin-bottom: 188px;
+/* margin-bottom: 112px; */
 transition: background-color var(--transit);
 background-color: var(--ferstlogo-btn-color);
 color: var(--body-color);
+box-shadow: 0px 4px 4px var(--colo-box-shadow);
 
 }
 
@@ -267,12 +271,15 @@ margin-top: 0;
 margin-bottom: 8px;
 
 color: var(--logo-nav-footer-color);
-font-size: 20px;
-line-height: 1.2;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
 }
 
 .section{
-    padding-top: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* padding-top: 120px; */
     /* margin-top: 120px; */
 }
 
@@ -367,10 +374,7 @@ transition: background-color var(--transit);
 }
 
 
-.prioritet__item{
-    flex-basis: calc((100% - 72px)/4);
-min-width: 250px;
-}
+
 
 .prioritet-icon{
     background-color: var(--fonbtn-fonsect-logofooter-color);
@@ -383,6 +387,7 @@ min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 

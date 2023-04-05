@@ -1,0 +1,120 @@
+@media screen and (min-width: 428px) {
+    .conteiner{
+        width: 428px;
+    }
+    
+    .hero{
+        width: 428px;
+    }
+
+    
+
+}
+
+
+/* PRIORITET AT WORK */
+
+
+@media screen and (max-width: 1157px) {
+    .prioritet-icon{
+        display: none;
+    }
+    .bottom{
+    display: none;
+    }
+
+
+        
+}
+
+@media screen and (min-width: 768px) {
+    .conteiner {
+            width: 768px;
+        }
+
+        /* HERO */
+
+    .hero {
+            width: 768px;
+        }
+
+     .hero-title {
+   
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+        margin: 0 auto 36px;
+    }
+
+        /* PRIORITET AT WORK */
+     .list {
+            gap: 24px;
+            row-gap: 74px;
+        }
+    
+    .prioritet__item {
+            flex-basis: calc((100% - 24px) / 2);
+            /* min-width: 250px; */
+        }
+
+        
+
+        .subtitle{
+            text-align: start;
+        }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .conteiner {
+        width: 1158px;
+    }
+
+    .section{
+         padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .list{
+
+    }
+
+        /* HERO */
+    
+        .hero {
+            width: 1158px;
+            padding-top: 188px;
+            padding-bottom: 188px;
+        }
+    
+        .hero-title {
+    
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            max-width: 496px;
+            margin: 0 auto 48px;
+        }
+
+         /* PRIORITET AT WORK */
+    .prioritet__item {
+        flex-basis: calc((100% - 24px) / 5);
+         min-width: 264px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+
+    p{
+        font-weight: 400;
+    }
+
+
+
+
+
+}
