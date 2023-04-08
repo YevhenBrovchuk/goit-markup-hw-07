@@ -63,6 +63,25 @@
         .subtitle{
             text-align: start;
         }
+
+
+        
+        .list-team{
+            row-gap: 64px;
+        }
+
+        .conteiner-customers{
+            padding: 0 108px;
+        }
+        .list-customers {
+            row-gap: 72px;
+            /* margin: 0 108px; */
+            
+        }
+        .customers-item {
+            
+             min-width: 168px;
+        }
 }
 
 
@@ -77,6 +96,7 @@
     }
 
     .list{
+        /* row-gap: none; */
 
     }
 
@@ -99,8 +119,8 @@
 
          /* PRIORITET AT WORK */
     .prioritet__item {
-        flex-basis: calc((100% - 24px) / 5);
-         min-width: 264px;
+        flex-basis: calc((100% - 72px)/4);
+            min-width: 250px;
     }
 
     .subtitle{
@@ -109,12 +129,206 @@
         font-weight: 500;
     }
 
-    p{
+    /* p{
         font-weight: 400;
-    }
+    } */
+
+
+/* WHAT ARE WE DOING */
+
+.bottom {
+    /* display: block; */
+    padding-top: 0;
+}
+
+.section-customers{
+    padding-top: 130px;
+        padding-bottom: 120px;
+}
+.conteiner-customers{
+    padding: 0 15px;
+}
+
+
+/* Customers */
+
+
+/* Footer */
+.page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: var(--logo-nav-footer-color);
+    ;
+}
+
+.logo-footer {
+    margin-bottom: 16px;
+    color: var(--fonbtn-fonsect-logofooter-color);
+}
+
+.text-footer {
+    width: 264px;
+    color: var(--textfooter-color);
+}
+
+
+.conteiner-footer {
+    display: flex;
+    /* gap:120px; */
+    flex-wrap: wrap;
+}
+
+.social-media {
+    margin-left: 120px;
+}
+
+.text-footer-social {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--body-color);
+}
 
 
 
+.list-icon-footer {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 16px;
+    flex-wrap: wrap;
+    min-width: 208px;
+}
 
+.linc-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-footer-icon);
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color var(--transit);
+}
+
+.linc-icon-footer:hover,
+.linc-icon-footer:focus {
+    background-color: var(--color-footer-icon-focus);
+}
+
+.cont-icon-footer {
+
+    width: 24px;
+    height: 24px;
+    fill: var(--fonbtn-fonsect-logofooter-color);
+}
+
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 0;
+}
+
+.foote-form-text {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--body-color);
+}
+
+.footer-form-lable {
+    display: contents;
+    /* position: relative; */
+
+    /* min-height: 40px;
+        min-width: 264px; */
+}
+
+.form-input-btn {
+    display: flex;
+    position: relative;
+    /* min-width: 453; */
+    flex-wrap: wrap;
+    transition: transform var(--transit);
+}
+
+.form-lable-text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    color: var(--body-color);
+}
+
+.form-input-text:focus+.form-lable-text,
+.form-input-text:not(:placeholder-shown)+.form-lable-text {
+    transform: translateX(-56px);
+    /* left:-52px */
+}
+
+
+.form-input-text {
+    min-height: 40px;
+    min-width: 264px;
+    background-color: var(--hero-fon-color);
+    border: 1px solid var(--body-color);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--body-color);
+
+}
+
+.footer-form-btn {
+    position: relative;
+    min-width: 165px;
+    padding-left: 24px;
+    padding-right: 64px;
+    min-height: 40px;
+    margin-left: 24px;
+    transition: background-color var(--transit);
+    background-color: var(--ferstlogo-btn-color);
+    color: var(--body-color);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background: var(--hover-focus-color);
+    box-shadow: 0px 4px 4px var(--colo-box-shadow);
+}
+
+.footer-btn-icon {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    width: 24px;
+    height: 20px;
+}
 
 }
