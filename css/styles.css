@@ -152,8 +152,10 @@ p{
     letter-spacing: 0.03em;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    /* line-height: 1.33; */
+    line-height: 1.17;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .logoferst{
     color:var(--ferstlogo-btn-color);
@@ -366,7 +368,7 @@ padding-bottom: 96px;
     /* display: flax; */
     justify-content: center;
     margin-top: 8px;
-    /* gap: 24px; */
+    gap: 24px;
 }
 
 .linc-icon {
@@ -681,18 +683,33 @@ transform: translate(0, 0);
 /* footer */
 
 .page-footer{
-padding-top: 100px;
-padding-bottom: 100px;
+/* padding-top: 100px;
+padding-bottom: 100px; */
+padding-top: 96px;
+padding-bottom: 96px;
 
 background-color: var(--logo-nav-footer-color);;
 }
 .logo-footer{
-    margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    /* margin-bottom: 16px; */
+    /* margin-bottom: 17.5px; */
     color:var(--fonbtn-fonsect-logofooter-color);
 }
 .text-footer{
-    width: 264px;
-    color:var(--textfooter-color);
+    width: 268px;
+    /* color:var(--textfooter-color); */
+color:var(--fonbtn-fonsect-logofooter-color);
+font-weight: 400;
+margin-top: 17.5px;
+}
+
+.logo-text-footer{
+    display: block;
+        text-align: center;
+    margin-bottom: 72px;
+
 }
 
 
@@ -700,10 +717,11 @@ background-color: var(--logo-nav-footer-color);;
     display: flex;
     /* gap:120px; */
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-media{
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 
 .text-footer-social{
@@ -732,7 +750,7 @@ background-color: var(--logo-nav-footer-color);;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-footer-icon);
+    background-color: var(--form-input-color-focus);
 
     border-radius: 50%;
     width: 40px;
@@ -754,14 +772,17 @@ transition: background-color var(--transit);
 
 
 .footer-form{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     margin-right: 0;
 }
 
 .foote-form-text{
     margin-bottom: 16px;
+    display: block;
+        text-align: center;
     
         font-weight: 500;
         font-size: 16px;
@@ -773,6 +794,7 @@ transition: background-color var(--transit);
 
 .footer-form-lable{
     display: contents;
+    /* margin-bottom: 16px; */
     /* position: relative; */
     
     /* min-height: 40px;
@@ -784,6 +806,8 @@ transition: background-color var(--transit);
     /* min-width: 453; */
     flex-wrap: wrap;
     transition: transform var(--transit);
+    gap:16px;
+
 }
 
 .form-lable-text{
@@ -809,7 +833,7 @@ letter-spacing: 0.04em;
 
 .form-input-text{
     min-height: 40px;
-    min-width: 264px;
+    min-width: 100%;
     background-color: var(--hero-fon-color);
     border: 1px solid var(--body-color);
     border-radius: 4px;
@@ -826,12 +850,13 @@ letter-spacing: 0.04em;
     
 }
 .footer-form-btn{
+    margin: 0 auto;
 position: relative;
 min-width: 165px;
 padding-left: 24px;
 padding-right: 64px;
 min-height: 40px;
-margin-left: 24px;
+/* margin-left: 24px; */
 transition: background-color var(--transit);
 background-color: var(--ferstlogo-btn-color);
 color: var(--body-color);
