@@ -27,17 +27,109 @@
         
 }
 
+
+
 @media screen and (min-width: 768px) {
     .conteiner {
             width: 768px;
         }
+.menu-btn-open{
+    display: none;
+}
+
+/* HEADER */
+
+.header{
+    padding-bottom: 0;
+    padding-top: 16px;
+}
+.site-nav {
+    display: flex;
+    margin-left: 120px;
+}
+
+.site-nav.list{
+    gap:40px;
+}
+/* .site-nav .list-item:not(:last-child) {
+    margin-right: 40px;
+} */
+
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--logo-nav-footer-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    transition: color var(--transit);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+
+    color: var(--hover-focus-color);
+
+}
+ /* Auth nav */
+
+ .address {
+     display: block;
+     margin-left: auto;
+ }
+
+ .auth-nav {
+     display: flex;
+
+ }
+.auth-nav.list{
+    flex-direction: column;
+    gap:0;
+    row-gap: 12px;
+}
+ .auth-nav .link {
+     display: block;
+     /* padding-top: 16px; */
+     /* padding-bottom: 16px; */
+
+     color: var(--main-text-color);
+     line-height: 1.5;
+     font-style: normal;
+
+     transition: color var(--transit);
+ }
+
+ .auth-nav .link:hover,
+ .auth-nav .link:focus {
+     color: var(--hover-focus-color);
+ }
+
+ .auth-nav-link{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+ }
+
+
+
 
         /* HERO */
 
     .hero {
             width: 768px;
+            background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/hero-bg-tab.jpg');
         }
-
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .hero {
+         background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/hero-bg-tab-2x.jpg');
+     }
+ }
      .hero-title {
    
     font-weight: 700;
@@ -69,6 +161,37 @@
         .list-team{
             row-gap: 64px;
         }
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .teamcardtomford {
+                        background-image: URL('../images/tomford-tab-2x.jpg');
+                    }
+                }
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .teamcardcamilagarcia {
+                        background-image: URL('../images/camilagarcia-tab-2x.jpg');
+                    }
+                }
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .teamcarddanielwilson {
+                        background-image: URL('../images/danielwilson-tab-2x.jpg');
+                    }
+                }
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .teamcardmarkguerrero {
+                        background-image: URL('../images/markguerrero-tab-2x.jpg');
+                    }
+                }
 
         .conteiner-customers{
             padding: 0 108px;
@@ -298,14 +421,102 @@ text-align: start;
 
     }
 
+   
+/* HEADER */
+
+.header{
+    padding: 24px 15px 0 15px;
+}
+.site-nav {
+    display: flex;
+    margin-left: 76px;
+}
+
+.site-nav .list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--logo-nav-footer-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    transition: color var(--transit);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+
+    color: var(--hover-focus-color);
+
+}
+
+/* Auth nav */
+
+.address {
+    display: block;
+    margin-left: auto;
+}
+
+.auth-nav {
+    display: flex;
+
+}
+
+.auth-nav .link {
+    
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--main-text-color);
+    line-height: 1.5;
+    font-style: normal;
+
+    transition: color var(--transit);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--hover-focus-color);
+}
+        
+   .auth-nav.list{
+    flex-direction: row;
+   } 
+   .auth-nav-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   }
+    .auth-nav.list{
+        gap: 40px;
+    }
+    
+       
+
         /* HERO */
     
         .hero {
             width: 1158px;
             padding-top: 188px;
             padding-bottom: 188px;
+            background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/heroimg.jpg');
         }
     
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .hero {
+                        background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/heroimg-2x.jpg');
+                    }
+                }
         .hero-title {
     
             font-weight: 700;
@@ -314,6 +525,68 @@ text-align: start;
             max-width: 496px;
             margin: 0 auto 48px;
         }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .computer {
+        background-image: URL('../images/computer-2x.jpg');
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .phone {
+        background-image: URL('../images/phone-2x.jpg');
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .computerandphone {
+        background-image: URL('../images/computerandphone-2x.jpg');
+    }
+}
+
+
+
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .teamcardtomford {
+         background-image: URL('../images/tomford-2x.jpg');
+     }
+ }
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .teamcardcamilagarcia {
+         background-image: URL('../images/camilagarcia-2x.jpg');
+     }
+ }
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .teamcarddanielwilson {
+         background-image: URL('../images/danielwilson-2x.jpg');
+     }
+ }
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .teamcardmarkguerrero {
+         background-image: URL('../images/markguerrero-2x.jpg');
+     }
+ }
+
+
+
 
          /* PRIORITET AT WORK */
     .prioritet__item {

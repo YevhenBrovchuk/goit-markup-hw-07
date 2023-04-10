@@ -48,6 +48,8 @@
     
 }
 .header{
+    padding-top: 24px;
+    padding-bottom: 22px;
     border-bottom: 1px solid var(--textfooter-color);
 }
 
@@ -164,62 +166,116 @@ p{
 
 
 /* Site nav */
-.site-nav{
-    margin-left: 76px;
+.site-nav {
+    display: none;
 }
-.site-nav .list-item:not(:last-child){
-    margin-right: 40px;
-}
-.site-nav .link{
- display: block;
- padding-top: 24px;
- padding-bottom: 24px;
-
- color:var(--logo-nav-footer-color);
- font-weight: 500;
- font-size: 16px;
- line-height: 1.5;  
-
-transition: color var(--transit);
-}
-
-.site-nav .link:hover, 
-.site-nav .link:focus{
-    
- color: var(--hover-focus-color);
- 
-}
-
-
-
-/* Auth nav */
-
 .address{
-    margin-left: auto;
+    display: none;
+
 }
-.auth-nav {
+.menu-btn-open{
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    width: 40px;
+        height: 30px;
+}
+.menu-btn-icon{
+    width: 32px;
+    height: 22px;
+    stroke:var(--logo-nav-footer-color);
+}
+
+/* Mobul Menu */
+.mob-menu{
+    position: fixed;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background-color: #fff;
+}
+.mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.menu-btn-close {
+    /* position: absolute; */
+    /* display: flex; */
+        margin-left: auto;
+        margin-bottom: 32px;
+            display: block;
+    /* top: 24px;
+    right: 24px; */
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid var(--color-box-shadow-one);
+        /* justify-content: center; */
+        /* align-items: center; */
+        border-radius: 50%;
+        transition: background-color var(--transit);
+        cursor: pointer;
+}
+
+.menu-btn-icon-close{
+    width: 8px;
+    height: 8px;
     
 }
 
-.auth-nav .link{
- display: block;
- padding-top: 24px;
- padding-bottom: 24px;
-
- color:var(--main-text-color);
- line-height: 1.5;
- font-style: normal;    
-
-transition: color var(--transit);
+.mob-menu-link{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: var(--logo-nav-footer-color);
+        text-decoration: none;
 }
 
-.auth-nav .link:hover, 
-.auth-nav .link:focus
-{
-    color: var(--hover-focus-color);
+.mob-menu-link:hover{
+color: var(--hover-focus-color);
+}
+.mob-menu-link-email{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--main-text-color);
 }
 
+.auth:hover{
+    color:var(--ferstlogo-btn-color);
+    gap:40px;
+}
+
+.mob-menu-site-nav{
+    flex-direction: column;
+}
+
+.mob-menu-nav{
+    
+}
+.mob-menu-address{
+    margin-bottom: 48px;
+}
+.mob-menu-auth-nav{
+    gap:40px;
+}
+
+.mob-menu-list-icon{
+    gap:56px;
+}
 
 /* hero */
 .hero{
@@ -232,11 +288,19 @@ margin-right: auto;
 
 
  background-color: var(--logo-nav-footer-color);
- background-image:linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/heroimg.jpg');
+ background-image:linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/hero-bg-mob.jpg');
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
  text-align: center;  
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/hero-bg-mob-2x.jpg');
+    }
 }
 
 .hero-title{   
@@ -330,6 +394,35 @@ padding-bottom: 96px;
 
     background-color: var(--fonbtn-fonsect-logofooter-color);
 }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .teamcardtomford {
+        background-image: URL('../images/tomford-mob-2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .teamcardcamilagarcia {
+        background-image: URL('../images/camilagarcia-mob-2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .teamcarddanielwilson {
+        background-image: URL('../images/danielwilson-mob-2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .teamcardmarkguerrero {
+        background-image: URL('../images/markguerrero-mob-2x.jpg');
+    }
+}
+
 
 .list-team{
     justify-content: center;
