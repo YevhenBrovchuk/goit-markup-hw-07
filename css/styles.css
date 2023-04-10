@@ -189,6 +189,7 @@ p{
 /* Mobul Menu */
 .mob-menu{
     position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -394,34 +395,7 @@ padding-bottom: 96px;
 
     background-color: var(--fonbtn-fonsect-logofooter-color);
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .teamcardtomford {
-        background-image: URL('../images/tomford-mob-2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .teamcardcamilagarcia {
-        background-image: URL('../images/camilagarcia-mob-2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .teamcarddanielwilson {
-        background-image: URL('../images/danielwilson-mob-2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .teamcardmarkguerrero {
-        background-image: URL('../images/markguerrero-mob-2x.jpg');
-    }
-}
+
 
 
 .list-team{

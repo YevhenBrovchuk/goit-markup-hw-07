@@ -161,37 +161,6 @@
         .list-team{
             row-gap: 64px;
         }
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .teamcardtomford {
-                        background-image: URL('../images/tomford-tab-2x.jpg');
-                    }
-                }
-        
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .teamcardcamilagarcia {
-                        background-image: URL('../images/camilagarcia-tab-2x.jpg');
-                    }
-                }
-        
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .teamcarddanielwilson {
-                        background-image: URL('../images/danielwilson-tab-2x.jpg');
-                    }
-                }
-        
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    .teamcardmarkguerrero {
-                        background-image: URL('../images/markguerrero-tab-2x.jpg');
-                    }
-                }
 
         .conteiner-customers{
             padding: 0 108px;
@@ -526,64 +495,7 @@ text-align: start;
             margin: 0 auto 48px;
         }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .computer {
-        background-image: URL('../images/computer-2x.jpg');
-    }
-}
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .phone {
-        background-image: URL('../images/phone-2x.jpg');
-    }
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .computerandphone {
-        background-image: URL('../images/computerandphone-2x.jpg');
-    }
-}
-
-
-
-
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     .teamcardtomford {
-         background-image: URL('../images/tomford-2x.jpg');
-     }
- }
-
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     .teamcardcamilagarcia {
-         background-image: URL('../images/camilagarcia-2x.jpg');
-     }
- }
-
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     .teamcarddanielwilson {
-         background-image: URL('../images/danielwilson-2x.jpg');
-     }
- }
-
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     .teamcardmarkguerrero {
-         background-image: URL('../images/markguerrero-2x.jpg');
-     }
- }
 
 
 
