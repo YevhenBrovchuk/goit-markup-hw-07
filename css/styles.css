@@ -529,6 +529,8 @@ gap: 70px;
 .customers-item {
     flex-basis: calc((100% - 120px)/6);
     min-width: 190px;
+    margin-right: auto;
+        margin-left: auto;
 }
 
 .customers-link {
