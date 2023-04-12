@@ -3,12 +3,7 @@
         width: 428px;
     }
 
-    .hero {
-        /* width: 428px; */
-    }
-
-
-
+   
 }
 
 
@@ -41,10 +36,10 @@
 
     /* HEADER */
 
-    .header {
-        padding-bottom: 0;
-        padding-top: 16px;
-    }
+        .header {
+            padding: 0;
+            
+        }
 
     .site-nav {
         display: flex;
@@ -103,7 +98,7 @@
         /* padding-bottom: 16px; */
 
         color: var(--main-text-color);
-        line-height: 1.5;
+        line-height: 1.17;
         font-style: normal;
 
         transition: color var(--transit);
@@ -127,7 +122,7 @@
     /* HERO */
 
     .hero {
-        width: 768px;
+        /* width: 768px; */
         background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/hero-bg-tab.jpg');
     }
 
@@ -224,9 +219,7 @@
         row-gap: 72px;
     }
 
-    .social-media {
-        /* margin-left: 120px; */
-    }
+    
 
     .text-footer-social {
         margin-bottom: 16px;
@@ -296,17 +289,13 @@
 
     .footer-form-lable {
         display: contents;
-        /* position: relative; */
-
-        /* min-height: 40px;
-        min-width: 264px; */
+        
     }
 
     .form-input-btn {
         display: flex;
         position: relative;
         gap: 24px;
-        /* min-width: 453; */
         flex-wrap: wrap;
         transition: transform var(--transit);
     }
@@ -328,7 +317,7 @@
     .form-input-text:focus+.form-lable-text,
     .form-input-text:not(:placeholder-shown)+.form-lable-text {
         transform: translateX(-56px);
-        /* left:-52px */
+        
     }
 
 
@@ -396,17 +385,11 @@
         padding-bottom: 120px;
     }
 
-    .list {
-        /* row-gap: none; */
-
-    }
 
 
     /* HEADER */
 
-    .header {
-        padding: 24px 15px 0 15px;
-    }
+    
 
     .site-nav {
         display: flex;
@@ -487,7 +470,7 @@
     /* HERO */
 
     .hero {
-        width: 1158px;
+        
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(to right, var(--color-hero-bgimage), var(--color-hero-bgimage)), URL('../images/heroimg.jpg');
@@ -527,9 +510,7 @@
         font-weight: 500;
     }
 
-    /* p{
-        font-weight: 400;
-    } */
+   
 
 
     /* WHAT ARE WE DOING */
@@ -574,7 +555,6 @@
 
     .conteiner-footer {
         display: flex;
-        /* gap:120px; */
         flex-wrap: wrap;
         padding: 0 15px;
         gap: 0;
@@ -614,7 +594,6 @@
         justify-content: center;
         align-items: center;
         background-color: var(--ferstlogo-btn-color);
-
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -655,16 +634,12 @@
 
     .footer-form-lable {
         display: contents;
-        /* position: relative; */
-
-        /* min-height: 40px;
-        min-width: 264px; */
+    
     }
 
     .form-input-btn {
         display: flex;
         position: relative;
-        /* min-width: 453; */
         flex-wrap: wrap;
         transition: transform var(--transit);
         gap: 0;
@@ -674,20 +649,18 @@
         position: absolute;
         top: 8px;
         left: 16px;
-
         font-weight: 400;
         font-style: normal;
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
-
         color: var(--body-color);
     }
 
     .form-input-text:focus+.form-lable-text,
     .form-input-text:not(:placeholder-shown)+.form-lable-text {
         transform: translateX(-56px);
-        /* left:-52px */
+        
     }
 
 
